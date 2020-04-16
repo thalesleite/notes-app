@@ -57,7 +57,7 @@ const renderNotes = () => {
     const dateElement = document.querySelector('#last-edited');
     const notes = getNotes();
     const note = notes.find((note) => note.id === noteId);
-
+    
     if ( !note ) {
       location.assign('/index.html');
     }

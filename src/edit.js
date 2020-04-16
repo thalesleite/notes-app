@@ -1,4 +1,4 @@
-import { initializeEditPage } from './views';
+import { initializeEditPage, generateLastEdited } from './views';
 import { updateNote, removeNote } from './notes';
 
 const titleElement = document.querySelector('#note-title');

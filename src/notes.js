@@ -15,7 +15,7 @@ const loadNotes = () => {
 };
 
 // Save the notes to localStorage
-const saveNotes = (notes) => {
+const saveNotes = () => {
     localStorage.setItem('notes', JSON.stringify(notes));
 }
 
@@ -33,7 +33,7 @@ const createNote = () => {
         updatedAt: timestamp
     });
 
-    saveNotes();
+    saveNotes(notes);
 
     return id;
 }
